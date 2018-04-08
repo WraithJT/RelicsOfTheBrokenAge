@@ -17,6 +17,7 @@ namespace RelicsoftheBrokenAge.Items
 			DisplayName.SetDefault("Strange Sword");
             Tooltip.SetDefault("This sword hums with a strange power." + "\n[c/EC7063:Relic]");
         }
+
 		public override void SetDefaults()
 		{
             item.CloneDefaults(ItemID.CopperShortsword);
