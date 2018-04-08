@@ -12,6 +12,7 @@ namespace RelicsoftheBrokenAge.Items
 		}
 		public override void SetDefaults()
 		{
+            //test
 			item.damage = 50;
 			item.melee = true;
 			item.width = 40;
