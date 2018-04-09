@@ -21,12 +21,9 @@ namespace RelicsoftheBrokenAge.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DirtBlock);
-            recipe.SetResult(this, 999);
-            recipe.AddRecipe();
-            recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("ExampleMod:ExampleItem");
-            recipe.SetResult(this, 999);
+            recipe.AddIngredient("BrokenSoul", 100);
+            recipe.SetResult(this, 1);
+            recipe.AddTile(null, "ExampleWorkbench");
             recipe.AddRecipe();
         }
 }
