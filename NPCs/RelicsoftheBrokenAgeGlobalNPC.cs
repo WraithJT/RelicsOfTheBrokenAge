@@ -19,8 +19,10 @@ namespace RelicsoftheBrokenAge.NPCs
 
         public override void NPCLoot(NPC npc)
         {
-            if (Main.expertMode && !npc.friendly && npc.lifeMax > 10 && !npc.boss && Main.rand.Next(50) == 0)
+            if (Main.expertMode && !npc.friendly && npc.lifeMax > 10 && !npc.boss && player.HasItem(mod.ItemType("StrangeSword")) && Main.rand.Next(50) == 0)
                 Item.NewItem(npc.getRect(), mod.ItemType("BrokenSoul"));
+            if (Main.expertMode && npc.type == NPCID.Zombie && Main.rand.Next(100) == 0)
+                Item.NewItem(npc.getRect(), mod.ItemType("StrangeSword"));
         }
 
         //public override void DrawEffects(NPC npc, ref Color drawColor)
