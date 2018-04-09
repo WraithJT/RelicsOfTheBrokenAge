@@ -19,8 +19,10 @@ namespace RelicsoftheBrokenAge.NPCs
 
         public override void NPCLoot(NPC npc)
         {
+            //Drop Broken Souls from any non-boss Expert mode NPC with life >10 while player has Strange Sword
             if (Main.expertMode && !npc.friendly && npc.lifeMax > 10 && !npc.boss && player.HasItem(mod.ItemType("StrangeSword")) && Main.rand.Next(50) == 0)
                 Item.NewItem(npc.getRect(), mod.ItemType("BrokenSoul"));
+            //Drop Strange Sword from zombies
             if (Main.expertMode && npc.type == NPCID.Zombie && Main.rand.Next(100) == 0)
                 Item.NewItem(npc.getRect(), mod.ItemType("StrangeSword"));
         }
