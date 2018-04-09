@@ -23,7 +23,7 @@ namespace RelicsoftheBrokenAge.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient("BrokenSoul", 100);
             recipe.SetResult(this, 1);
-            recipe.AddTile(null, "ExampleWorkbench");
+            recipe.AddTile(TileID.DemonAltar);
             recipe.AddRecipe();
         }
 }
