@@ -24,6 +24,9 @@ namespace RelicsoftheBrokenAge.Items
             item.color = Color.DarkGray;
             item.damage = 189;
 			item.rare = 8;
+            //projectile: seeking, piercing?
+            //life on hit, constant life drain -- possibly use VanillaUpdateAccessory with an unavailable accessory providing the life drain
+            //buff on kill
 		}
 
         public override void AddRecipes()
