@@ -5,17 +5,17 @@ using Terraria.ModLoader;
 
 namespace RelicsoftheBrokenAge.Items
 {
-	public class StrangeSword : ModItem
+	public class BlackBladeofDeath : ModItem
 	{
-        public override string Texture
-        {
-            get { return "Terraria/Item_" + ItemID.EnchantedSword; }
-        }
+        //public override string Texture
+        //{
+        //    get { return "Terraria/Item_" + ItemID.EnchantedSword; }
+        //}
 
         public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Black Blade of Death");
-			Tooltip.SetDefault("This sword hungers for souls.");
+			Tooltip.SetDefault("The blade hungers for souls.");
 		}
 
 		public override void SetDefaults()
